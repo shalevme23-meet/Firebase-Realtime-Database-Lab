@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweets</title>
+</head>
+<body>
+  {% for tweet in thing %}
+    <ul>
+        <li>
+            {{tweet["title"]}}<br>
+            {{tweet["text"]}}
+        </li>
+    </ul>
+    {% endfor %}
+<a href={{url_for('signin')}}>Go to Sign In</a>
+</body>
+</html>
